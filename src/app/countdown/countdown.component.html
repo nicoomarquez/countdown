@@ -1,0 +1,42 @@
+
+
+<ng-template [ngIf]="!isEngineer">
+    <div class="timer">
+        <h4>Tiempo hasta mi ultimo examen final</h4>
+        <ng-template [ngIf]="!hasCountdownFinished">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Horas</th>
+                        <th>Minutos</th>
+                        <th>Segundos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ time.hours }}</td>
+                        <td>{{ time.minutes }}</td>
+                        <td>{{ time.seconds }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </ng-template>
+        <ng-template [ngIf]="hasCountdownFinished && !isEngineer">
+            <div>
+                <span>Empezo!</span>
+            </div>
+            <div class="sand-clock">
+                <img src="/assets/images/sandclock.gif" />
+            </div>
+        </ng-template>
+    </div>
+</ng-template>
+
+<ng-template [ngIf]="isEngineer">
+   <div class="timer">
+    <h4>Hay un nuevo ingeniero!</h4>
+    <div class="sand-clock">
+        <img src="/assets/images/celebration.gif" />
+    </div>
+   </div>
+</ng-template>

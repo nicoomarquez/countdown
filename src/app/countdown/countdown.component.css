@@ -1,0 +1,41 @@
+.timer {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 1.4em;
+    /*position: absolute;
+    top: 0;
+    bottom: 50%;
+    left: 0;
+    right: 0;*/
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+  }
+
+  .timer > table{
+    margin: 0 auto;
+  }
+
+  .timer > table > thead > tr > th{
+    padding: 20px;
+  }
+
+  .sand-clock{
+    position: relative;
+    top: 20%;
+    left: 0;
+    right: 0;
+  }
+
+  .sand-clock > img{
+    width: 360px;
+    height: auto;
+  }
+
+  h4{
+    margin-inline: 20px;
+  }
